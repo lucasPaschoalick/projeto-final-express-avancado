@@ -1,9 +1,9 @@
 const User = require('../models/User');
 
-async function insertUser(userModel) {
+async function insertUser(user) {
     
-    console.log('User inserted:', userModel);
-    return userModel;
+    console.log('User inserted:', user);
+    return user;
 }
 
 module.exports = {

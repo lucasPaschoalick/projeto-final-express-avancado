@@ -15,7 +15,6 @@ async function handleUserRegistration(req, res, next) {
 
     try {
         const insertedUser = await userService.insertUser(userModel);
-        // Responda conforme necessário, por exemplo, redirecionando para outra página
         res.redirect('/user/menu');
     } catch (error) {
         console.error(error);
